@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="350"
+        Width="400"
+        Height="350"
+        x:Class="Reloj.MainWindow"
+        Title="Reloj"
+        RequestedThemeVariant="Light"
+        CanResize="False"
+        >
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="00:00:00" Name="LblReloj" Padding="3" FontSize="40" Width="250" Background="Black" Foreground="White" Margin="0,40,0,0" HorizontalContentAlignment="Center"/>
+                <Button Name="BtnIniciar" Content="Marcha" Click="BtnIniciar_OnClick" Margin="75,20,0,0" BorderBrush="Black"/>
+                <Button Name="BtnParar" Content="Parar" Click="BtnParar_OnClick" Margin="180,-30,0,0" BorderBrush="Black"/>
+                <Button Name="BtnSalir" Content="Salir" Click="BtnSalir_OnClick" Margin="280,-30,0,0" BorderBrush="Black"/>
+                <Label Name="LblFecha" Content="Cargando..." Margin="0,170,300,0" Background="LightBlue" Height="40" Width="400" BorderBrush="Black"/>
+        </StackPanel>
+</Window>

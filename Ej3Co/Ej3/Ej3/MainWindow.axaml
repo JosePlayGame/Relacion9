@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="350"
+        Width="400"
+        Height="350"
+        x:Class="Ej3.MainWindow"
+        RequestedThemeVariant="Light"
+        Title="Ej3">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto" VerticalAlignment="Center" Margin="4">
+                <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment= "Right" >
+                        <TextBlock Foreground="Red" Margin="70,20,20,20" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"  Text="▝Suma de los Números entres N1 y N2▘"></TextBlock>
+                        <TextBlock  Margin="45,5" Foreground="Blue" Text="Numero Inicial: "><TextBox Name="tbinput" Width="100"></TextBox></TextBlock>
+                        <TextBlock Margin="50,10,10,10"  Foreground="Blue" Text="Numero Final: "><TextBox Name="tbinput2" Width="100"></TextBox></TextBlock>
+                </StackPanel>
+                <Button  Margin="-70,60,0,0" BorderBrush="Black" Foreground="Blue" Background="LightGray" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Click="btnCalcular_Click">Calcular</Button>
+                <TextBlock Foreground="Red" Grid.Column="0" Grid.Row="4" VerticalAlignment="Bottom" Margin="20,310,0,0" Name="tbSalida"></TextBlock>
+        </Grid>
+</Window>

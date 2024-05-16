@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+        x:Class="Ej7.MainWindow"
+        Title="Ej7"
+        RequestedThemeVariant="Light"
+        Background="LightSalmon"
+        Width="400"
+        Height="450"
+        CanResize="False"
+        >
+        <StackPanel>
+                <Border Margin="50" Background="Black"  Width="305" Height="205">
+                    <StackPanel Name="stpColor" Background="White" Width="300" Height="200"/>
+                </Border>
+                <Slider Width="300" Name="red" Minimum="0" Maximum="255" Margin="0,-40,0,0"/>
+                <Slider Width="300" Name="Green" Minimum="0" Maximum="255"/>
+                <Slider Width="300" Name="blue" Minimum="0" Maximum="255"/>
+                <Button Background="LightBlue" Name="btnCambiarColor" Click="BtnCambiarColor_OnClick" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="Black">Cambiar Color</Button>
+            </StackPanel>
+</Window>

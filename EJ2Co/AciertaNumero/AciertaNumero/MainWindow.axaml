@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="300"
+        Width="400"
+        Height="300"
+        x:Class="AciertaNumero.MainWindow"
+        Title="AciertaNumero"
+        RequestedThemeVariant="Light"
+        CanResize="False"
+        >
+        <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                        <Button BorderBrush="Black" Name="BtnGenerar" Click="BtnGenerar_OnClick" Margin="50,50,0,0">Generar Numero</Button>
+                        <CheckBox Name="CHBver_numero" Checked="CHBver_numero_OnChecked" Unchecked="CHBver_numero_OnUnchecked" Margin="60,50,0,0">Ver Numero</CheckBox>
+                </StackPanel>
+                <StackPanel>
+                        <TextBlock Text="Acierta el numero" Margin="50,20,0,0"/>
+                        <TextBox Name="TbEntrada" Width="50" Margin="0,0,240,0"/>
+                        <Button BorderBrush="Black" Name="BtnCalcular" Click="BtnCalcular_OnClick" Margin="235,-30,0,0" Height="30">Probar</Button>
+                </StackPanel>
+                <TextBlock Name="TblSalida" FontWeight="Black" Margin="50,30,0,0"/>
+        </StackPanel>
+</Window>

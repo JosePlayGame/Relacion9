@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
+        x:Class="Relacion_9.MainWindow"
+        Background="White"
+        Width="300"
+        Height="300"
+        CanResize="False"
+        Title="Relacion_9"
+        >
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextElement.Foreground="Black" >
+            <StackPanel Margin="30">
+                <TextBlock TextAlignment="Center">Calcular la suma de los primeros n-numeros.</TextBlock>
+                <TextBlock>El valor de n se lee desde teclado</TextBlock>
+            </StackPanel>
+            <StackPanel TextElement.Foreground="Black" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="Número: "/><TextBox Background="Gray" Name="TBInput" Width="150"></TextBox>
+            </StackPanel>
+            <StackPanel TextElement.Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Name="btnCalcular" Click="BtnCalcular_Click" Margin="30" Background="Gray">Calcular</Button>
+                <Button Name="btnSalir" Click="BtnSalir_Click" Margin="30" Background="Gray">Cerrar</Button>
+            </StackPanel>
+            <TextBlock  Margin="20" FontSize="17">La suma obtenida es : <TextBlock Name="TBOutput" TextElement.Foreground="Black" TextElement.FontStyle="Oblique" FontStretch="Condensed"/></TextBlock>
+        </StackPanel>
+        
+</Window>
