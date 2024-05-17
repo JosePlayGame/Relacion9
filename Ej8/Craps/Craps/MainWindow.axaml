@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
+        x:Class="Craps.MainWindow"
+        Title="Craps"
+        Width="400"
+        Height="400"
+        RequestedThemeVariant="Light"
+        CanResize="False"
+        Background="LightGreen"
+        >
+        <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center">
+                        <Image Name="ImgDado1" Width="50" Margin="10"/>
+                        <Image Name="ImgDado2" Width="50"/>
+                </StackPanel>
+                <Button Name="BtnTirar" Background="LightSeaGreen" Foreground="White" Content="Tirar" Click="BtnTirar_OnClick" FontSize="20" BorderBrush="Black" HorizontalAlignment="Center"/>
+                <StackPanel HorizontalAlignment="Center" Margin="0,20,200,0" Orientation="Horizontal" Name="StPTurno">
+                        <TextBlock Text="Turno:" FontSize="20" Foreground="LightSeaGreen" FontWeight="Black" Margin="0,0,0,0"/>
+                        <TextBlock Name="TblTurno" FontSize="20" FontWeight="Black" Margin="3,0,0,0"/>
+                </StackPanel>
+                <TextBlock Name="TbResultado" Text="" FontSize="30" FontWeight="Black" Foreground="Red" HorizontalAlignment="Center" Margin="60"/>
+                <StackPanel Name="PnlPerder" Margin="0,-300,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="BtnSalir" Background="Red" Foreground="White" Content="Salir" Click="BtnSalir_OnClick" FontSize="20" BorderBrush="Black" HorizontalAlignment="Center" Margin="20" Opacity="0"/>
+                        <Button Name="BtnReiniciar" Background="LightSeaGreen" Foreground="White" Content="Reiniciar" Click="BtnReiniciar_OnClick" FontSize="20" BorderBrush="Black" HorizontalAlignment="Center" Opacity="0"/>
+                </StackPanel>
+        </StackPanel>
+</Window>
